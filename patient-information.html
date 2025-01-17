@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+    	<meta charset="UTF-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<title>Northcoders Surgery: Well Being Centre</title>
+		<style>
+			a {
+						background-color: #e5eeee;
+					 }
+			legend {
+						background-color: gray;
+						color: white;
+						padding: 5px 10px;
+					}
+            body {
+                background-image: radial-gradient(rgb(204, 191, 191),rgb(175, 146, 113) )
+            }        
+			img{
+                align: centre;
+                position: relative;
+                animation: move 15s ease-in-out infinite;
+                animation-direction: alternate;
+            }
+            @keyframes move {
+                0%   {left: 0px; top: 0px; rotate: 30deg;}
+                25%  {left: 50%; top: 0px; rotate: 30deg;}
+                50%  {left: 80%; top: 50%; rotate: -30deg;}
+                75%  {left: 0px; top: 80%; rotate: 30deg;}
+                100% {left: 0px; top: 0px; rotate: -30deg;}
+                    }
+		</style>
+	</head>
+
+	<body>
+		<h1>
+			<a href="#">Northcoders Surgery</a>
+			<a href="tel:03330509138" style="font-size:20px">0333 050 9138</a>
+		</h1>
+
+		<div>
+			<ul>
+				<li><a href="./index.html">Home</a></li>
+				<li><a href="./services.html">Services</a></li>
+				<li><a href="./team.html">Team</a></li>
+				<li><a href="./patient-information.html">Patient Information</a></li>
+				<li><a href="./well-being-centre.html">Well-being Centre</a></li>
+				<li><a href="./complaints.html">Complaints</a></li>
+			</ul>
+		</div>
+    </body>
+    <div>
+
+        <p>
+            This is a page for patient information!!!
+            <br>
+            <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+            </canvas> 
+            <script>
+                var c = document.getElementById("myCanvas");
+                var ctx = c.getContext("2d");
+                ctx.moveTo(0, 0);
+                ctx.lineTo(200, 100);
+                ctx.stroke();
+                </script> 
+        </p>
+        
+    </div>
+</html>

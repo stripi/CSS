@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+    	<meta charset="UTF-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<title>Northcoders Surgery: Complaints</title>
+		<style>
+            body{
+                        background-image: linear-gradient(red, black)
+            }
+			a {
+						background-color: #e5eeee;
+					 }
+			legend {
+						background-color: gray;
+						color: white;
+						padding: 5px 10px;
+					}
+			input {
+
+			}
+            label{
+                display: inline-block;
+                width: 200px;
+                text-align: left;
+                color: white;
+            }
+            select{
+                display: inline-block;
+                width: 200px;
+                text-align: left;
+            }
+            textarea{
+                display: inline-block;
+                vertical-align: top;
+            }
+
+		</style>
+	</head>
+
+	<body>
+		<h1>
+			<a href="#">Northcoders Surgery</a>
+			<a href="tel:03330509138" style="font-size:20px">0333 050 9138</a>
+		</h1>
+
+		<div>
+			<ul>
+				<li><a href="./index.html">Home</a></li>
+				<li><a href="./services.html">Services</a></li>
+				<li><a href="./team.html">Team</a></li>
+				<li><a href="./patient-information.html">Patient Information</a></li>
+				<li><a href="./well-being-centre.html">Well-being Centre</a></li>
+				<li><a href="./complaints.html">Complaints</a></li>
+			</ul>
+		</div>
+        <form>
+            <fieldset>
+                <legend>Complain to us</legend>
+                <div>
+                    <label>Your name:</label>
+                    <input type=text><br>
+                    <label>Your patient number:</label>
+                    <input type=text><br><br>
+                    <label>Your contact method:</label>
+                    <select name ="contactmethod" id="contactmethod">
+                        <option value="email">Email</option> 
+                        <option value="phone">Phone</option> 
+                    </select><br>
+                    <label>Contact info:</label>
+                    <input type=text><br><br>
+                    <label>Category of complaint:</label>
+                    <select name ="category" id="category">
+                        <option value="appointments">Appointments</option> 
+                        <option value="communication">Communication</option> 
+                        <option value="medical care">Medical Care</option> 
+                        <option value="other">Other</option> 
+                    </select>
+                    <br><br>
+                    <div>
+                    <label> Enter your complaint:</label>
+                    <textarea style="resize: none;" rows="5" cols="50"></textarea>
+                    </div>
+                    <br><br>
+                    <input type="submit"value="Submit" style="margin-left: 50%; width: 200px; text-align:center; display: block; margin: auto;">
+
+
+                </div>
+            </fieldset>
+        </form>
+    </body>
+</html>
